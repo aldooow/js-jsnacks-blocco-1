@@ -4,32 +4,99 @@
     <meta charset="utf-8">
     <link rel="stylesheet" href="css/style.css">
     <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700" rel="stylesheet">
-    <title>COMPITO</title>
+    <title>JSnacks</title>
   </head>
   <body>
-
     <div class="wrapper">
-      <h1>Sei stato invitato alla festa del grande Gatsby???</h1>
-      <label>Quale è il tuo nome??</label>
-      <input id="js_nome-form" type="text" placeholder="nome">
-      <button id="js_button-invia-1"">INVIA</button>
-      <div id="js_alert"></div>
+      <h1>JSnacks</h1>
+
+      <div class="jsnack1-wrapper">
+        <h2>JSnack 1</h2>
+        <p>L’utente inserisce due numeri in successione, con due prompt.
+          Il software stampa il maggiore.</p>
+        <div class="">
+          <label>Numero1</label>
+          <input id="js_numero1" type="text" placeholder="Numero 1">
+          <label>Numero 2</label>
+          <input id="js_numero2" type="text" placeholder="Numero 2">
+        </div>
+        <button id="js_button1">INVIO</button>
+        <div id="js_risultato1"class="">
+        </div>
       </div>
 
-      <div class="wrapper">
-        <h1>Facciamo la somma di ogni cifra di un numero!!!</h1>
-        <label>Quale è il tuo nome??</label>
-        <input id="js_numero-form" type="text" placeholder="numero">
-        <button id="js_button-invia-2"">INVIA</button>
-        <div class="js_risultato">
+      <div class="jsnack2-wrapper">
+        <h2>JSnack 2</h2>
+        <p>L’utente inserisce due parole in successione, con due prompt.
+        Il software stampa prima la parola più corta, poi la parola più lunga.</p>
+        <div class="">
+          <label>Parola1</label>
+          <input id="js_parola1" type="text" placeholder="Parola 1">
+          <label>Parola2</label>
+          <input id="js_parola2" type="text" placeholder="Parola 2">
+        </div>
+        <button id="js_button2">INVIO</button>
+        <div id="js_risultato2"class="">
+        </div>
+      </div>
 
+
+      <div class="jsnack3-wrapper">
+        <h2>JSnack 3</h2>
+        <p>Il software deve chiedere per 5 volte all’utente di inserire un numero.
+          Il programma stampa la somma di tutti i numeri inseriti. Esegui questo
+          programma in due versioni, con il for e con il while.</p>
+        <div class="ms_somma">
+          <input id="js_number1"type="number"> +
+          <input id="js_number2"type="number"> +
+          <input id="js_number3"type="number"> +
+          <input id="js_number4"type="number"> +
+          <input id="js_number5"type="number"> =
+          <span id="js_somma"></span>
+        </div>
+        <button id="js_button3">INVIO</button>
+        <div id="js_risultato3"class="">
+        </div>
+      </div>
+
+
+      <div class="jsnack4-wrapper">
+        <h2> JSnack 4</h2>
+        <p>In un array sono contenuti i nomi degli invitati alla festa del
+          grande Gatsby, chiedi all’utente il suo nome e comunicagli se può
+          partecipare o no alla festa.</p>
+        <div class="">
+          <h3>Insercisce il tuo nome per vedere si sei nella lista!!!</h3>
+          <label>Nome</label>
+          <input id="js_nome-form"type="text" placeholder="nome lista">
+          <button id="js_button4">INVIA</button>
+          <div id="js_alert" class="">
+          </div>
+        </div>
+      </div>
+
+
+      <div class="jsnack5-wrapper">
+        <h2>JSnack 5</h2>
+        <p>Chiedi un numero di 4 cifre all’utente e calcola la somma di tutte
+          le cifre che compongono il numero.</p>
+        <div class="">
+          <h3>Metti un numerio di 4 cifre, che ti calcolo la somma!!</h3>
+          <label>Numero</label>
+          <input id="js_numero-quattro" type="text" placeholder="numero di 4 cifre">
+        </div>
+        <button id="js_button5">INVIA</button>
+        <div id="js_risultato5"class="">
+        </div>
       </div>
 
     </div>
 
+    <!-- JAVASCRIPT  -->
     <script type="text/javascript" src="js/script.js">
 
     </script>
+    <!-- END JAVASCRIPT  -->
 
   </body>
 </html>

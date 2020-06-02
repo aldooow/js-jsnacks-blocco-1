@@ -34,11 +34,26 @@ button {
   border: 3px solid black;
 }
 input {
-  
   margin: 20px;
   font-size: 30px;
   background: pink;
   padding: 10px;
   border-radius: 10px;
   border: 3px solid black;
+}
+.wrapper div[class*="-wrapper"] {
+  font-size: 30px;
+  background: white;
+  width: 100%;
+  margin: 25px auto;
+  padding: 10px;
+  border-radius: 10px;
+  border: 3px solid black;
+
+}
+
+.ms_somma input[type="number"] {
+  width: 100px;
+  appearance: none;
+  margin: 0;
 }
