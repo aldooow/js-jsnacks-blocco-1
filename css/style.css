@@ -57,3 +57,10 @@ input {
   appearance: none;
   margin: 0;
 }
+
+#js_colorerosso {
+  color: red;
+}
+#js_coloreverde {
+  color: green;
+}

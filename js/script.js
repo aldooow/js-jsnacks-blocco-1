@@ -1,4 +1,5 @@
-// JSnack 1
+// BLOCCO1 ***************************************
+// JSnack 1 BLOCCO1
 /*L’utente inserisce due numeri in successione, con due prompt.
   Il software stampa il maggiore.*/
 
@@ -18,7 +19,7 @@ function() {
   }
 });
 
-// JSnack 2
+// JSnack 2 BLOCCO1
 /*L’utente inserisce due parole in successione, con due prompt.
 Il software stampa prima la parola più corta, poi la parola più lunga.*/
 
@@ -37,7 +38,7 @@ buttonDue.addEventListener("click", function(){
   }
 });
 
-// JSnack 3
+// JSnack 3 BLOCCO1
 /*Il software deve chiedere per 5 volte all’utente di inserire un numero.
   Il programma stampa la somma di tutti i numeri inseriti. Esegui questo
   programma in due versioni, con il for e con il while.*/
@@ -61,7 +62,7 @@ function() {
   risultatoTre.innerHTML = somma;
 });
 
-// JSnack 4
+// JSnack 4 BLOCCO1
 /*In un array sono contenuti i nomi degli invitati alla festa del
   grande Gatsby, chiedi all’utente il suo nome e comunicagli se può
   partecipare o no alla festa.*/
@@ -97,7 +98,7 @@ function() {
 
 })
 
-// JSnack 5
+// JSnack 5 BLOCCO1
 /*Chiedi un numero di 4 cifre all’utente e calcola la somma di tutte
   le cifre che compongono il numero.*/
 
@@ -117,3 +118,27 @@ function(){
     risultatoCinque.innerHTML = somma2
   }
 })
+
+// END BLOCCO1 ***************************************
+
+// BLOCCO2 ***************************************
+
+// JSnack 8 BLOCCO2
+/*Crea due tag div con due id diversi: un div avrà il testo colorato di rosso
+  mentre l’altro di verde.
+  Partendo da un array di numeri, stampiamo nell’id rosso i numeri dispari
+  e in verde i numeri pari.*/
+
+var arrayVerde = document.getElementById('js_coloreverde');
+var arrayRosso = document.getElementById('js_colorerosso');
+
+var arrayNumeri = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+for(var i = 0; i < arrayNumeri.length; i++){
+  if (arrayNumeri[i]%2==0){
+    arrayVerde.innerHTML +=  '[ ' + arrayNumeri[i] + ' ]';
+  }else{
+    arrayRosso.innerHTML += '[ ' + arrayNumeri[i]  + ' ]';
+  }
+}
+
+// END BLOCCO2 ***************************************
