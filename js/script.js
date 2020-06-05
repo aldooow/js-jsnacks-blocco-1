@@ -43,18 +43,23 @@ buttonDue.addEventListener("click", function(){
   Il programma stampa la somma di tutti i numeri inseriti. Esegui questo
   programma in due versioni, con il for e con il while.*/
 
-var numberOne = document.getElementById("js_number1");
-var numberTwo = document.getElementById("js_number2");
-var numberThree = document.getElementById("js_number3");
-var numberFour = document.getElementById("js_number4");
-var numberFive = document.getElementById("js_number5");
-var numbers = [numberOne.value, numberTwo.value, numberThree.value, numberFour.value, numberFive.value];
+
+
 var buttonTre = document.getElementById("js_button3");
 var risultatoTre = document.getElementById("js_risultato3");
-
-
 buttonTre.addEventListener("click",
 function() {
+
+  var numberOne = document.getElementById("js_number1");
+  console.log(numberOne)
+  var numberTwo = document.getElementById("js_number2");
+  var numberThree = document.getElementById("js_number3");
+  var numberFour = document.getElementById("js_number4");
+  var numberFive = document.getElementById("js_number5");
+  var numbers = [parseInt(numberOne.value), parseInt(numberTwo.value), parseInt(numberThree.value), parseInt(numberFour.value), parseInt(numberFive.value)];
+  console.log(numbers)
+
+
   var somma = 0;
   for (var i = 0; i < numbers.length; i++) {
   somma += numbers[i];
