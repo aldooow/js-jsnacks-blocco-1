@@ -210,7 +210,7 @@ function pareggiaArray (arrayUno, arrayDue) {
 /* Fai inserire un numero, che chiameremo N, all’utente. Genera N array, ognuno
   formato da 10 numeri casuali tra 1 e 100.
   Ogni volta che ne crei uno, stampalo a schermo.*/
-var prompt = parseInt(prompt('quanti?'))
+
 
 var arraySingolo = [];
 for(var i = 1; i <= 10; i++) {
@@ -229,8 +229,11 @@ console.log(arraySingolo)
 
 var arrayVerde = document.getElementById('js_coloreverde');
 var arrayRosso = document.getElementById('js_colorerosso');
+var arrayPariDispari = document.getElementById('js_array-pari-dispari');
 
 var arrayNumeri = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+
+arrayPariDispari.innerHTML = '[ ' + arrayNumeri + ' ]';
 for(var i = 0; i < arrayNumeri.length; i++){
   if (arrayNumeri[i]%2==0){
     arrayVerde.innerHTML +=  '[ ' + arrayNumeri[i] + ' ]';
@@ -238,6 +241,5 @@ for(var i = 0; i < arrayNumeri.length; i++){
     arrayRosso.innerHTML += '[ ' + arrayNumeri[i]  + ' ]';
   }
 }
-
 
 // END BLOCCO2 ***************************************
