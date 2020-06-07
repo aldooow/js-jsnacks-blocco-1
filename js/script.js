@@ -128,7 +128,100 @@ function(){
 
 // BLOCCO2 ***************************************
 
-// JSnack 8 BLOCCO2
+// JSnack6 BLOCCO2 (Jsnack2)
+/* Generatore di “nomi cognomi” casuali: prendendo una lista di nomi e una lista
+  di cognomi, Gatsby vuole generare una falsa lista di invitati.*/
+
+var listaFinta = document.getElementById('js_lista-finta');
+
+var nomi = ['Aldo', 'Alex', 'Rosy', 'Carlo', 'Francesco'];
+
+var cognomi = ['Rossi', 'Matussi', 'Cadore', 'Grandi', 'Bauli'];
+
+var lista = [];
+// console.log(lista)
+
+for(var i = 1; i <= 5; i++){
+listaFinta.innerHTML = lista[i] ;
+  var nomeCognomeFinto = generaCoppiaDiElementiInArray(nomi, cognomi)
+  // console.log(nomeCognomeFinto)
+  lista.push('<br>' + i + ') ' +  nomeCognomeFinto)
+}
+listaFinta.innerHTML = lista;
+
+
+/*FUNZIONE:
+ --> Questa funzioni genera una copia di elementi random, pressi da altri Array!*/
+function generaCoppiaDiElementiInArray(arrayUno, arrayDue) {
+  var  arryNomeECognomiCompleto = [];
+  while( arryNomeECognomiCompleto.length <= 1){
+    var numeroCasualeUno = Math.floor(Math.random() * (arrayUno.length));
+    var elementoUno = arrayUno[numeroCasualeUno];
+    arryNomeECognomiCompleto.push(elementoUno);
+
+    var numeroCasualeDue = Math.floor(Math.random() * (arrayDue.length));
+    var elementoDue = arrayDue[numeroCasualeDue];
+    arryNomeECognomiCompleto.push(elementoDue);
+  }
+return arryNomeECognomiCompleto;
+}
+
+
+// JSnack7 BLOCCO2  (JSnack 4)
+/* Crea due array che hanno un numero di elementi diversi. Aggiungi elementi
+  casuali all’array che ha meno elementi, fino a quando ne avrà tanti quanti l’altro.*/
+
+// --> Stampa degli Array in HTML 'PRIMA' di uttilizzare la funzione.
+var arrayPrimoPrima = document.getElementById('js_array-primo-prima');
+var arraySecondoPrima = document.getElementById('js_array-secondo-prima');
+
+var arrayPrimo = [2, 23, 45, 8, 12, 19, 12, 23, 45, 8, 12, 19];
+var arraySecondo = [1, 34, 67, 102, 67, 9, 17];
+
+arrayPrimoPrima.innerHTML = '<b>Array 1: </b>' + '[' + arrayPrimo + ']';
+arraySecondoPrima.innerHTML = '<b>Array 2: </b>' + '[' + arraySecondo + ']';
+
+// --> Stampa degli Array in HTML 'DOPO' di uttilizzare la funzione.
+var arrayPrimoDopo = document.getElementById('js_array-primo-dopo');
+var arraySecondoDopo = document.getElementById('js_array-secondo-dopo');
+pareggiaArray(arrayPrimo, arraySecondo)
+
+
+arrayPrimoDopo.innerHTML = '<b>Array 1: </b>' + '[' + arrayPrimo + ']';
+arraySecondoDopo.innerHTML = '<b>Array 2: </b>' + '[' + arraySecondo + ']';
+
+
+/*Funzione:
+ --> Questa funzione mette in confronto 2 array, ed aggiunge ellementi a
+quello piu corto fino a raggiungere la stessa lughezza del altro.*/
+function pareggiaArray (arrayUno, arrayDue) {
+  while (arrayUno.length < arrayDue.length) {
+    var elementoNuovo = Math.floor(Math.random() * (100 - 1)) + 1;
+    arrayUno.push('<b>' + elementoNuovo + '</b>')
+  }
+  while (arrayUno.length > arrayDue.length) {
+    var elementoNuovo = Math.floor(Math.random() * (100 - 1)) + 1;
+    arrayDue.push('<b>' + elementoNuovo + '</b>')
+  }
+}
+
+
+// JSnack 8 BLOCCO2 (Blocco 3/ JSnack 2)
+/* Fai inserire un numero, che chiameremo N, all’utente. Genera N array, ognuno
+  formato da 10 numeri casuali tra 1 e 100.
+  Ogni volta che ne crei uno, stampalo a schermo.*/
+var prompt = parseInt(prompt('quanti?'))
+
+var arraySingolo = [];
+for(var i = 1; i <= 10; i++) {
+  var elementoArray = Math.floor(Math.random() * (100 - 1)) + 1;
+  arraySingolo.push(elementoArray)
+}
+console.log(arraySingolo)
+
+
+
+// JSnack 9 BLOCCO2
 /*Crea due tag div con due id diversi: un div avrà il testo colorato di rosso
   mentre l’altro di verde.
   Partendo da un array di numeri, stampiamo nell’id rosso i numeri dispari
@@ -145,5 +238,6 @@ for(var i = 0; i < arrayNumeri.length; i++){
     arrayRosso.innerHTML += '[ ' + arrayNumeri[i]  + ' ]';
   }
 }
+
 
 // END BLOCCO2 ***************************************
